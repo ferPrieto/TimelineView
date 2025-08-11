@@ -1,7 +1,5 @@
 <div align="center">
-  <img src="assets/logo.svg" alt="TimelineView Logo" width="100"/>
-  
-  # TimelineView
+  <img src="art/banner.png" alt="TimelineView Banner"/>
   
   A synchronized dual-view timeline visualization component for Android with native Compose support.
 </div>
