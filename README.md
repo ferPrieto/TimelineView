@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="art/banner.jpg" alt="TimelineView Banner"/>
+  <img src="art/banner-readme.jpg" alt="TimelineView Banner"/>
   
   A synchronized dual-view UI component library for Android, inspired by the Soundcloud wave scroll view.
 </div>
