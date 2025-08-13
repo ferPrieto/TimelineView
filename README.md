@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="art/banner.png" alt="TimelineView Banner"/>
+  <img src="art/banner.jpg" alt="TimelineView Banner"/>
   
-  A synchronized dual-view timeline visualization component for Android with native Compose support.
+  A synchronized dual-view UI component library for Android, inspired by the Soundcloud wave scroll view.
 </div>
 
 ## Overview
@@ -15,16 +15,6 @@ TimelineView provides a synchronized scrolling experience with two content views
 - **Customizable Offset**: Configure the scroll offset as a fraction of screen width
 - **Material 3 Support**: Built-in Material 3 styling variants
 - **Flexible Content**: Support for any drawable resources as timeline content
-- **Modern Architecture**: Uses Compose's declarative UI paradigm
-
-## Use Cases
-
-- **Audio/Video Editing**: Show played vs remaining content
-- **Progress Visualization**: Display progress in long-running tasks
-- **Data Timeline**: Visualize historical vs future data points  
-- **Reading Progress**: Track reading progress in documents
-- **Media Players**: Timeline scrubbing for audio/video
-- **Data Processing**: Show processed vs pending data
 
 ## Quick Start
 
