@@ -1,17 +1,17 @@
 [versions]
-# SDK and Tools
-agp = "8.1.4"
-kotlin = "1.9.10"
-compileSdk = "34"
+# SDK and Tools - Updated for Gradle 9.0.0 compatibility
+agp = "8.7.0"
+kotlin = "2.0.21"
+compileSdk = "35"
 minSdk = "21"
-targetSdk = "34"
+targetSdk = "35"
 
 # git-version
 git = "3.0.0"
 
-# Compose
-composeBom = "2023.10.01"
-composeCompiler = "1.5.3"
+# Compose - Updated for better Kotlin 2.x compatibility
+composeBom = "2024.10.01"
+composeCompiler = "1.5.15"
 activityCompose = "1.8.2"
 lifecycleViewmodelCompose = "2.7.0"
 
@@ -127,5 +127,6 @@ testing-compose = [
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" } 
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 git-version = { id = "com.palantir.git-version", version.ref = "git" } 

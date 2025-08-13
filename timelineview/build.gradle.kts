@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
     `maven-publish`
 }
 
@@ -29,16 +30,12 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
+    kotlin {
+        jvmToolchain(17)
     }
 
     buildFeatures {
         compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
     }
 
     namespace = "com.github.ferprieto.timelineview"
@@ -83,7 +80,12 @@ configurations.configureEach {
     }
 }
 
-val gitVersion: groovy.lang.Closure<String> by rootProject.extra
+// Configuration Cache compatible version handling
+val gitVersion: String by lazy {
+    providers.exec {
+        commandLine("git", "describe", "--tags", "--always", "--first-parent", "--abbrev=7", "--match=*", "HEAD")
+    }.standardOutput.asText.get().trim().removePrefix("v").removeSuffix(".dirty")
+}
 
 afterEvaluate {
     publishing {
@@ -93,7 +95,7 @@ afterEvaluate {
 
                 groupId = "ferPrieto"
                 artifactId = "timelineview"
-                version = gitVersion().removePrefix("v").removeSuffix(".dirty")
+                version = gitVersion
                 
                 pom {
                     name.set("TimelineView")

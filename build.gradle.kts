@@ -6,6 +6,15 @@ plugins {
     alias(libs.plugins.git.version)
 }
 
+// Gradle 9.0.0 - Global configurations for all subprojects
+allprojects {
+    // Enable reproducible builds
+    tasks.withType<AbstractArchiveTask>().configureEach {
+        isPreserveFileTimestamps = false
+        isReproducibleFileOrder = true
+    }
+}
+
 tasks.register<Delete>("clean") {
     delete(layout.buildDirectory)
 } 
