@@ -8,6 +8,14 @@
 
 TimelineView provides a synchronized scrolling experience with two content views that move in complementary directions. Originally designed for audio waveform visualization, it's now a versatile component perfect for any timeline-based application.
 
+## Inspiration
+
+<div align="center">
+  <img src="art/inspo.gif" alt="Soundcloud Inspiration"/>
+  
+  This is the original Soundcloud wave scroll view that inspired this project.
+</div>
+
 ## Features
 
 - **Native Compose Implementation**: Pure Compose implementation without XML dependencies
