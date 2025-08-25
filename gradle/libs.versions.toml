@@ -16,7 +16,7 @@ activityCompose = "1.8.2"
 
 # AndroidX - Compatible with AGP 8.8.1  
 androidxCore = "1.15.0"
-androidxAppcompat = "1.6.1"
+androidxAppcompat = "1.7.1"
 androidxConstraintlayout = "2.2.1"
 
 # External Libraries
