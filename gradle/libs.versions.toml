@@ -13,7 +13,7 @@ git = "3.0.0"
 composeBom = "2024.12.01"
 composeCompiler = "1.5.15"
 activityCompose = "1.10.1"
-lifecycleViewmodelCompose = "2.7.0"
+lifecycleViewmodelCompose = "2.9.2"
 
 # AndroidX
 androidxCore = "1.17.0"
