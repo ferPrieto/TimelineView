@@ -23,7 +23,7 @@ androidxConstraintlayout = "2.2.1"
 # Testing
 junit = "4.13.2"
 androidxTestJunit = "1.1.5"
-androidxTestCore = "1.5.0"
+androidxTestCore = "1.7.0"
 androidxTestRules = "1.5.0"
 androidxTestRunner = "1.5.2"
 espresso = "3.5.1"
