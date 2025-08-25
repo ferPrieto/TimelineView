@@ -2,9 +2,9 @@
 # SDK and Tools - Updated for Gradle 9.0.0 compatibility
 agp = "8.12.1"
 kotlin = "2.0.21"
-compileSdk = "35"
+compileSdk = "36"
 minSdk = "21"
-targetSdk = "35"
+targetSdk = "36"
 
 # git-version
 git = "3.0.0"
