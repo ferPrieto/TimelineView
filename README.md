@@ -11,7 +11,7 @@ TimelineView provides a synchronized scrolling experience with two content views
 ## Inspiration
 
 <div align="center">
-  <img src="art/inspo.gif" alt="Soundcloud Inspiration" width="250"/>
+  <img src="art/inspo.gif" alt="Soundcloud Inspiration" width="500"/>
   
   This is the original Soundcloud wave scroll view that inspired this project.
 </div>
