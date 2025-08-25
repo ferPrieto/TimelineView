@@ -65,15 +65,6 @@ dependencies {
     
     // Compose Debug Tools
     debugImplementation(libs.bundles.compose.debug)
-
-    // Unit Testing
-    testImplementation(libs.bundles.testing.unit)
-    
-    // UI Testing  
-    androidTestImplementation(libs.bundles.testing.ui)
-    
-    // Compose Testing
-    androidTestImplementation(libs.bundles.testing.compose)
 }
 
 // Force resolution of compatible AndroidX versions
@@ -84,6 +75,5 @@ configurations.configureEach {
         force("androidx.appcompat:appcompat:${libs.versions.androidxAppcompat.get()}")
         force("androidx.constraintlayout:constraintlayout:${libs.versions.androidxConstraintlayout.get()}")
         force("androidx.activity:activity-compose:${libs.versions.activityCompose.get()}")
-        force("androidx.lifecycle:lifecycle-viewmodel-compose:${libs.versions.lifecycleViewmodelCompose.get()}")
     }
 } 

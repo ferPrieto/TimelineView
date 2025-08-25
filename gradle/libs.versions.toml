@@ -1,10 +1,10 @@
 [versions]
-# SDK and Tools - Updated for Gradle 9.0.0 compatibility
-agp = "8.12.1"
+# SDK and Tools - Updated for Gradle 9.0.0 compatibility with Android Studio compatibility
+agp = "8.8.1"
 kotlin = "2.0.21"
-compileSdk = "35"
+compileSdk = "36"
 minSdk = "21"
-targetSdk = "35"
+targetSdk = "36"
 
 # git-version
 git = "3.0.0"
@@ -12,22 +12,14 @@ git = "3.0.0"
 # Compose - Updated for better Kotlin 2.x compatibility
 composeBom = "2024.12.01"
 composeCompiler = "1.5.15"
-activityCompose = "1.10.1"
-lifecycleViewmodelCompose = "2.7.0"
+activityCompose = "1.8.2"
 
-# AndroidX
-androidxCore = "1.17.0"
-androidxAppcompat = "1.7.1"
+# AndroidX - Compatible with AGP 8.8.1  
+androidxCore = "1.15.0"
+androidxAppcompat = "1.6.1"
 androidxConstraintlayout = "2.2.1"
 
-# Testing
-junit = "4.13.2"
-androidxTestJunit = "1.1.5"
-androidxTestCore = "1.5.0"
-androidxTestRules = "1.5.0"
-androidxTestRunner = "1.5.2"
-espresso = "3.5.1"
-robolectric = "4.10.3"
+# External Libraries
 timelineview = "1.1.1"
 
 [libraries]
@@ -52,26 +44,10 @@ compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling
 compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
 compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
-compose-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 
 # Compose Debug Tools
 compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-
-# Testing - Unit Tests
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-test-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTestJunit" }
-androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidxTestCore" }
-androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "androidxTestRules" }
-androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
-robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
-
-# Testing - UI Tests
-androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
-androidx-test-espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espresso" }
-
-# Compose Testing
-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 
 [bundles]
 # AndroidX Core Bundle
@@ -88,38 +64,12 @@ compose = [
     "compose-ui-tooling-preview",
     "compose-foundation",
     "compose-material3",
-    "compose-activity",
-    "compose-lifecycle-viewmodel"
+    "compose-activity"
 ]
 
 # Compose Debug Bundle
 compose-debug = [
     "compose-ui-tooling",
-    "compose-ui-test-manifest"
-]
-
-# Unit Testing Bundle
-testing-unit = [
-    "junit",
-    "androidx-test-junit",
-    "androidx-test-core",
-    "androidx-test-rules",
-    "androidx-test-runner",
-    "robolectric"
-]
-
-# UI Testing Bundle
-testing-ui = [
-    "androidx-test-junit",
-    "androidx-test-espresso-core",
-    "androidx-test-espresso-contrib",
-    "androidx-test-runner",
-    "androidx-test-rules"
-]
-
-# Compose Testing Bundle
-testing-compose = [
-    "compose-ui-test-junit4",
     "compose-ui-test-manifest"
 ]
 
