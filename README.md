@@ -39,7 +39,7 @@ fun MyScreen() {
 
 ## Demo
 
-<table>
+<table align="center">
   <tr>
     <td align="center">
       <img src="art/main_screen_light.gif" alt="Main Screen Light" width="300"/>
