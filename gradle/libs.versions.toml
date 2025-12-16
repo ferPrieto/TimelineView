@@ -1,7 +1,7 @@
 [versions]
 # SDK and Tools - Updated for Gradle 9.0.0 compatibility with Android Studio compatibility
 agp = "8.8.1"
-kotlin = "2.0.21"
+kotlin = "2.3.0"
 compileSdk = "36"
 minSdk = "21"
 targetSdk = "36"
