@@ -10,7 +10,7 @@ targetSdk = "36"
 git = "3.0.0"
 
 # Compose - Updated for better Kotlin 2.x compatibility
-composeBom = "2024.12.01"
+composeBom = "2025.12.01"
 composeCompiler = "1.5.15"
 activityCompose = "1.8.2"
 
