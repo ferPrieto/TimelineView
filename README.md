@@ -1,5 +1,3 @@
-<img src="art/TimelineView-Banner.png" alt="TimelineView Banner" title="Banner" align="right" width="200" height="90" />
-
 # TimelineView 〰️
 
 TimelineView provides a synchronized scrolling experience with two content views that move in complementary directions. Originally designed for audio waveform visualization, it's now a versatile component perfect for any timeline-based application.
@@ -12,13 +10,36 @@ TimelineView provides a synchronized scrolling experience with two content views
   This is the original Soundcloud wave scroll view that inspired this project.
 </div>
 
-## Features
 
-- **Native Compose Implementation**: Pure Compose implementation without XML dependencies
-- **Synchronized Scrolling**: Perfect offset synchronization between past and future content
-- **Customizable Offset**: Configure the scroll offset as a fraction of screen width
-- **Material 3 Support**: Built-in Material 3 styling variants
-- **Flexible Content**: Support for any drawable resources as timeline content
+## Demo
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="art/main_screen_light.gif" alt="Main Screen Light" width="300"/>
+      <br>
+      <em>Main Screen - Light Mode</em>
+    </td>
+    <td align="center">
+      <img src="art/main_screen_dark.gif" alt="Main Screen Dark" width="300"/>
+      <br>
+      <em>Main Screen - Dark Mode</em>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="art/usecases_light.gif" alt="Use Cases Light" width="300"/>
+      <br>
+      <em>Use Cases - Light Mode</em>
+    </td>
+    <td align="center">
+      <img src="art/usecases_dark.gif" alt="Use Cases Dark" width="300"/>
+      <br>
+      <em>Use Cases - Dark Mode</em>
+    </td>
+  </tr>
+</table>
+
 
 ## Installation
 
@@ -134,34 +155,6 @@ fun MyScreen() {
 }
 ```
 
-## Demo
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="art/main_screen_light.gif" alt="Main Screen Light" width="300"/>
-      <br>
-      <em>Main Screen - Light Mode</em>
-    </td>
-    <td align="center">
-      <img src="art/main_screen_dark.gif" alt="Main Screen Dark" width="300"/>
-      <br>
-      <em>Main Screen - Dark Mode</em>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="art/usecases_light.gif" alt="Use Cases Light" width="300"/>
-      <br>
-      <em>Use Cases - Light Mode</em>
-    </td>
-    <td align="center">
-      <img src="art/usecases_dark.gif" alt="Use Cases Dark" width="300"/>
-      <br>
-      <em>Use Cases - Dark Mode</em>
-    </td>
-  </tr>
-</table>
 
 ## Structure
 
