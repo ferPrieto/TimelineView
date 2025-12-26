@@ -1,10 +1,6 @@
-<div align="center">
-  <img src="art/banner-readme.jpg" alt="TimelineView Banner"/>
-  
-  A synchronized dual-view UI component library for Android, inspired by the Soundcloud wave scroll view.
-</div>
+<img src="art/TimelineView-Banner.png" alt="TimelineView Banner" title="Banner" align="right" width="128" height="64" />
 
-## Overview
+# TimelineView 〰️
 
 TimelineView provides a synchronized scrolling experience with two content views that move in complementary directions. Originally designed for audio waveform visualization, it's now a versatile component perfect for any timeline-based application.
 
@@ -24,7 +20,70 @@ TimelineView provides a synchronized scrolling experience with two content views
 - **Material 3 Support**: Built-in Material 3 styling variants
 - **Flexible Content**: Support for any drawable resources as timeline content
 
-## Quick Start
+## Installation
+
+### 1. Add this dependency in `build.gradle` (app-level)
+
+Kotlin: 
+
+```kotlin
+implementation("com.github.ferPrieto:timelineview:LATEST_VERSION_NUMBER")
+```
+
+Groovy:
+
+```groovy
+implementation 'com.github.ferPrieto:timelineview:LATEST_VERSION_NUMBER'
+```
+
+If you are using a Gradle version catalog through a `libs.versions.toml` file:
+
+1. Add `timelineview = "LATEST_VERSION_NUMBER"` in the `[versions]` section.
+2. Add `timelineview = { group = "com.github.ferPrieto", name = "timelineview", version.ref = "timelineview" }` in the `[libraries]` section
+3. Add `implementation(libs.timelineview)` in the app-level `build.gradle` file
+
+### 2. Include Jitpack repository
+
+You must include `jitpack.io` in your `settings.gradle` file because it's a public dependency
+
+Kotlin:
+
+```kotlin
+dependencyResolutionManagement {
+   ...
+    repositories {
+      ...
+      maven("https://jitpack.io")
+    }
+}
+```
+
+Groovy:
+
+```groovy
+dependencyResolutionManagement {
+   ...
+    repositories {
+      ...
+      maven { url "https://jitpack.io" }
+    }
+}
+```
+
+## Usage
+
+### Basic Implementation
+
+```kotlin
+@Composable
+fun MyScreen() {
+    TimelineView(
+        height = 120.dp
+    )
+}
+```
+
+### With Custom Content
 
 ```kotlin
 @Composable
@@ -33,6 +92,44 @@ fun MyScreen() {
         height = 120.dp,
         pastContent = R.drawable.my_past_content,
         futureContent = R.drawable.my_future_content
+    )
+}
+```
+
+### Advanced Configuration
+
+```kotlin
+@Composable
+fun MyScreen() {
+    TimelineView(
+        height = 120.dp,
+        pastContent = R.drawable.my_past_content,
+        futureContent = R.drawable.my_future_content,
+        offsetFraction = 1f/8f, // Custom offset
+        dividerWidth = 1.dp,
+        dividerColor = Color.Gray
+    )
+}
+```
+
+### Simplified Version
+
+```kotlin
+@Composable
+fun MyScreen() {
+    TimelineViewSimple(
+        height = 120.dp
+    )
+}
+```
+
+### Material 3 Styled
+
+```kotlin
+@Composable
+fun MyScreen() {
+    TimelineViewMaterial3(
+        height = 120.dp
     )
 }
 ```
