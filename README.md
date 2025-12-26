@@ -1,4 +1,4 @@
-<img src="art/TimelineView-Banner.png" alt="TimelineView Banner" title="Banner" align="right" />
+<img src="art/TimelineView-Banner.png" alt="TimelineView Banner" title="Banner" align="right" width="200" height="90" />
 
 # TimelineView 〰️
 
