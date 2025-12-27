@@ -15,7 +15,7 @@ composeCompiler = "1.5.15"
 activityCompose = "1.9.3"
 
 # AndroidX - Compatible with AGP 8.8.1  
-androidxCore = "1.15.0"
+androidxCore = "1.17.0"
 androidxAppcompat = "1.7.1"
 androidxConstraintlayout = "2.2.1"
 
