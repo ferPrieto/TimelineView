@@ -7,7 +7,7 @@ minSdk = "21"
 targetSdk = "36"
 
 # git-version
-git = "3.4.0"
+git = "4.2.0"
 
 # Compose - Updated for better Kotlin 2.x compatibility
 composeBom = "2024.12.01"
